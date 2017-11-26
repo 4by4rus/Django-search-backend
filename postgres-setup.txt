@@ -1,0 +1,12 @@
+
+create postgres user
+----------------------
+CREATE USER postgres WITH PASSWORD 'youtpassword';
+ALTER ROLE postgres SET client_encoding TO 'utf8';
+ALTER ROLE postgres SET default_transaction_isolation TO 'read committed';
+ALTER ROLE postgres SET timezone TO 'UTC';
+ALTER USER postgres CREATEDB;
+
+create postgres db
+CREATE DATABASE personsdb;
+GRANT ALL PRIVILEGES ON DATABASE personsdb TO postgres;

@@ -1,0 +1,10 @@
+# Django
+django==1.11
+djangorestframework==3.7.3
+django-filter
+
+ # Python-PostgreSQL Database Adapter
+psycopg2==2.7.3
+
+# Time zones support
+pytz==2016.10

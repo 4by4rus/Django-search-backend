@@ -1,0 +1,46 @@
+
+
+#set postgres user password to suit
+change password to yourpassword in setting.py
+
+#in terminal do the following
+python manage.py makemigrations
+python manage.py migrate     #(create table structure)
+python manage.py createsuperuser  #(superuser=ej, pwd=password123)
+
+
+#run server manually from commandline
+python manage.py runserver
+
+#go to url in browser
+http://localhost:8000/persons/listdetail
+
+#Udio Backend Tabs
+	Person List -> shows list of persons (will be initally empty so you have to create person details)
+	Person Search -> search persons by email or name 
+	Person Create -> Create user ( e.g. name = Neymar, email= neymar@neymar.com, id=1)
+	Json Persons List & Search -> Json list and search facility for testing purpose
+
+#Django Admin Tabs
+	Admin  -> admin page to create or delete Persons
+	Login  -> login to Django admin page for Administration
+
+
+# Screen shot attached of my local app
+	
+# trouble shooting 1
+	# check if you have the required dependencies if the url doesnt work
+	# in python terminal
+	>>>import pip 
+	>>>installed_packages = pip.get_installed_distributions()
+	>>>installed_packages_list = sorted(["%s==%s" % (i.key, i.version)
+	....     for i in installed_packages]) 
+	>>>print(installed_packages_list)
+
+	#should see something like this
+	['django-filter==1.1.0', 'django==1.11.7', 'djangorestframework==3.7.3', 'pip==9.0.1', 'psycopg2==2.7.3.2', 'pytz==2017.3', 'setuptools==28.8.0']
+
+# trouble shooting 2
+	#check password
+	
+
