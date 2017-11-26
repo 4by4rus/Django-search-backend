@@ -4,9 +4,9 @@ test app
 This is partially a Docker setup and a manual setup
 
 # Contains - 
-Dockerfile
-docker-compose.yml
-requirements.txt
+Dockerfile,
+docker-compose.yml,
+requirements.txt,
 
 
 1. above should install the dependency side of things (not tested on my end cause I ran into bios/virtualisation troubles)
