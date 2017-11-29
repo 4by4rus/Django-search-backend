@@ -1,5 +1,5 @@
 # udi-back
-test app
+List Create and search using django Rest and Views
 
 This is partially a Docker setup and a manual setup
 
